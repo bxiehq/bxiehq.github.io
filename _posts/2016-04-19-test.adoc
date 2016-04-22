@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Test Asciidoc"
+mjasciimath: true
+---
+= Asciidoc page
+:layout: page
+:permalink: /page/
+
+Hello world
+
+----
+puts "Hello world!"
+----
+
+\`f(x) = cos(x)+sin(x)/2`
