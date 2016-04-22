@@ -20,3 +20,11 @@ markdown: Kramdown
 
 gems:
   - jekyll-asciidoc
+
+asciidoctor:
+  attributes:
+    - icons=font
+    - hardbreaks!
+    - source-highlighter=coderay
+
+exclude: ['README.adoc', 'Gemfile.lock', 'Gemfile', '*.sh']
