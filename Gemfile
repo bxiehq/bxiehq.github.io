@@ -14,3 +14,5 @@ group :development do
 end
 
 gem 'stringex'
+
+gem 'jekyll-sitemap'
