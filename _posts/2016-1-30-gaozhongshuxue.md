@@ -1,7 +1,7 @@
 ---
 layout: post
 mjlatex: true
-title: "高中数学"
+title: "数学"
 ---
 
 ## 元素与集合的关系
