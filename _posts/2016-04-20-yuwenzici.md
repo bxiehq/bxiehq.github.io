@@ -1,4 +1,4 @@
 ---
 layout: post
-title: "语文字音辨析"
+title: "语文基础知识"
 ---
