@@ -105,11 +105,13 @@ $ \tan \theta \tan \varphi =\frac{\cos(\theta-\varphi)-\cos(\theta+\varphi)}{\co
 
 和差化积：
 
-$ \sin \theta \pm \sin \varphi = 2 \sin\left( \frac{\theta \pm \varphi}{2} \right) \cos\left( \frac{\theta \mp \varphi}{2} \right) $
+$ \sin\theta+\sin\phi=2\sin\frac{\theta+\phi}{2}\cos\frac{\theta-\phi}{2} $
 
-$ \cos \theta + \cos \varphi = 2 \cos\left( \frac{\theta + \varphi} {2} \right) \cos\left( \frac{\theta - $ \varphi}{2} \right) $
+$ \cos\theta+\cos\phi=2\cos\frac{\theta+\phi}{2}\cos\frac{\theta-\phi}{2} $
 
-$ \cos \theta - \cos \varphi = -2\sin\left( {\theta + \varphi \over 2}\right) \sin\left({\theta - \varphi $ \over 2}\right) $
+$ \cos\theta-\cos\phi=-2\sin{\theta+\phi\over2}\sin{\theta-\phi\over2} $
+
+$ \sin\theta-\sin\phi=2\cos{\theta+\phi\over2}\sin{\theta-\phi\over2} $
 
 ## 求面积
 
