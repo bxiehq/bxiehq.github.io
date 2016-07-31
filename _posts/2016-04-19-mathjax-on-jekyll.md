@@ -6,7 +6,7 @@ date:   2016-04-19 17:02:22 +0800
 categories: jekyll update
 ---
 
-许多个人博客都是用 MathJax 实现对数学公式的支持，一般都在主题模板上外部引用 MathJax 的脚本，稍作配置即可使用。
+许多博客系统都用 MathJax 实现对数学公式的支持，一般在主题模板上外部引用 MathJax 的脚本，稍作配置即可使用。
 相较于 Ghost、Wordpress， 用 Kramdown 引擎的 Jekyll 对 MathJax 的支持更方便，在公式内无需用下标转义。
 
 Kramdown 自动将一对双美元符号「$$」里的内容放入「math/tex」类型的 script 标签内。 MathJax 看到这个标签就自动渲染成单行公式。
@@ -24,7 +24,7 @@ N < f(x) < M \Leftrightarrow [ f(x)-M ][ f(x)-N] < 0 \\
                 \Leftrightarrow \frac{f(x)-N}{M-f(x)}>0 %]]></script>
 ```
 
-当然你在源文件里用 script 标签的形式写也是可行的：
+当然在源文件里用 script 标签的形式写也是可行的：
 
 <script type="math/tex; mode=display">\complement_U(A\bigcap B) = \complement_UA\bigcup \complement_UB; \complement_U(A\bigcup B) = \complement_UA\bigcap \complement_UB</script>
 
