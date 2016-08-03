@@ -94,7 +94,7 @@ blockquote {
  * Code formatting
  */
 
-code {font-family:Menlo, Monaco, Courier; font-size:15px; text-align: left; }
+code {font-family:Menlo, Monaco, Consolas,Courier; font-size:15px; text-align: left; }
 
 pre {
         font-family:Menlo, Monaco, Courier;
