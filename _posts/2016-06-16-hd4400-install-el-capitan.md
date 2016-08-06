@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Intel HD4400 安装 OS X 10.11 El Capitan"
+description:"HD4400 安装黑苹果"
 
 ---
 

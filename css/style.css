@@ -93,6 +93,11 @@ blockquote {
 /**
  * Code formatting
  */
+p code {
+	padding: 3px 4px;
+	background-color: #f7f7f9; 
+	border: 1px solid #e1e1e8;
+}
 
 code {font-family:Menlo, Monaco, Consolas,Courier; font-size:15px; text-align: left; }
 

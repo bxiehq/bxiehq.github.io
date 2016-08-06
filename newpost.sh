@@ -9,5 +9,7 @@ cat > _posts/$F << EOF
 ---
 layout: post
 title: ""
+description: ""
+
 ---
 EOF
