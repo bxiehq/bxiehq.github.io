@@ -93,6 +93,9 @@ blockquote {
 /**
  * Code formatting
  */
+p {
+    word-break: break-all;
+}
 p code {
 	padding: 3px 4px;
 	background-color: #f7f7f9; 
