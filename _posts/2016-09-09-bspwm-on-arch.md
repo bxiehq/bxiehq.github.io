@@ -49,3 +49,17 @@ bspwm 旧版和 git 版的某些配置语法不同，比如设置窗口的状态
 
     xsetroot -cursor_name left_ptr 
 
+设置所有窗口为浮动：
+
+    bspc rule -a "*" state=floating
+
+`bspc rule` 为指定的窗口添加规则，用` xprop | grep WM_CLASS` 查找窗口类名，比如 Firefox：
+
+    WM_CLASS(STRING) = "Navigator", "Firefox"
+
+类名就是后面的”Firefox“，大小写敏感，设定规则：
+    
+    bspc rule -a Firefox desktop='^2' follow=on
+
+始终在桌面2启动 Firefox，并切换到焦点。
+
