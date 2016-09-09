@@ -18,7 +18,7 @@ bspwm 旧版和 git 版的某些配置语法不同，比如设置窗口的状态
     cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
     cp -r /usr/share/doc/bspwm/examples/panel ~/.config/bspwm/
 
-`.xinitc` 写入 `exec bspwm`即可。一般的 Display Manager 会查 `/usr/share/xsessions/bspwm.desktop`，自动列出 bspwm session。
+`.xinitrc` 写入 `exec bspwm`即可。一般的 Display Manager 会查 `/usr/share/xsessions/bspwm.desktop`，自动列出 bspwm session。
 
 环境变量、预启动程序都可写入 `~/.config/bspwm/bspwmrc` ，启动时自动运行。
 
