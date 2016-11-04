@@ -31,4 +31,4 @@ description: "redmi note 3, cyanogenmod, firmware, rom"
 
 ## Firmware, Cyanogenmod, OpenGApps
 
-按住`音量加+电源`进 recovery，先清楚分区，可保留 SD 卡和 Internal Storage。先刷固件，只需一次，否则设置内 VPN、锁屏崩溃，指纹不可用。如果安装 OpenGApps，可选 CM nightly，首次启动时跳过 Google 服务器的验证。
+按住`音量加+电源`进 recovery，先清除分区，可保留 SD 卡和 Internal Storage。先刷固件，只需一次，否则设置内 VPN、锁屏崩溃，指纹不可用。如果安装 OpenGApps，可选 CM nightly，首次启动时跳过 Google 服务器的验证。
