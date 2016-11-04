@@ -20,7 +20,7 @@ description: "redmi note 3, cyanogenmod, firmware, rom"
 
 ## 解锁、刷 recovery
 
-- 申请地址：(http://www.miui.com/unlock/)，登陆、手机号、理由，审核10分钟左右；
+- 申请地址：http://www.miui.com/unlock/，登陆、手机号、理由，审核10分钟左右；
 - 手机进入 fastboot 模式；
 - 安装[解锁工具](http://www.miui.com/unlock/done.html)，登录、解锁
 
