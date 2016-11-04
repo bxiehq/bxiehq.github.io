@@ -10,6 +10,7 @@ description: "redmi note 3, cyanogenmod, firmware, rom"
 ## 刷开发版
 
 有卡刷和线刷两种，不过卡刷从来没成功，提示：
+
 > 更新包验证失败,无法正常更新
 
 于是放弃，改线刷。到 [http://www.miui.com/shuaji-393.html]() 下载通用刷机工具和完整包，注意是全网通版。通用刷机工具设置有个脚本名要改成完整包里的名字，目录选择在完整包根文件夹下。
@@ -19,7 +20,7 @@ description: "redmi note 3, cyanogenmod, firmware, rom"
 
 ## 解锁、刷 recovery
 
-- 申请地址：[http://www.miui.com/unlock/]()，登陆、手机号、理由，审核10分钟左右；
+- 申请地址：(http://www.miui.com/unlock/)，登陆、手机号、理由，审核10分钟左右；
 - 手机进入 fastboot 模式；
 - 安装[解锁工具](http://www.miui.com/unlock/done.html)，登录、解锁
 
