@@ -14,7 +14,7 @@ description: "HD4400 安装黑苹果"
 
 一般到这时候，如果插在 Mac 上是可以直接安装的，但普通电脑不行。所以 Clover 的作用就体现出来了，它是一个 Bootloader，让 OS X 认为这就是一台真的 Mac。如果是 USB 镜像或是懒人包，Clover 是装好了的，下载合适的 `config.plist` 就能启动。若是在虚拟机下或者真机，装个 [Clover 安装向导](https://sourceforge.net/projects/cloverefiboot/files/latest/download)就行[^3]。
 
-搜索关键字 `显卡型号 config.plist` 来找合适的 `config.plist`。RehabMan 大神有各种显卡的配置：https://github.com/RehabMan/OS-X-Clover-Laptop-Config。之后装几个最基本的驱动：FakePCIID.kext、FakeSMC.kext、VoodooPS2Controller.kext。具体怎么装，不同显卡、网卡、系统版本各不相同，通过关键字 `显卡型号＋10.11或者 El Capian`来找。安装驱动的时候要看说明，注意哪些额外步骤是需要注意的。网上的`config.plist`不是下载下来就可用的，一般都需要做调整。比如说显卡是 HD4400，就下载 `config_HD4600_4400_4200.plist`，重命名为 `config.plist` 。该配置禁用了 VBoxHfs.efi，需要把这一条删了，要不然到时候看不到 OS X 的启动菜单。根据关键字 `HD4400 10.11` 找到：http://www.tonymacx86.com/threads/fix-hd4200-hd4400-hd4600-hd5600-on-10-11.175797/，按上面的步骤操作基本上能成功。VBoxHFS.efi 和 HFSPlus.efi，两者都可以用来读取 HFS 分区，被 Clover 用来寻找可引导的项，据说后者速度快，但前者兼容性好，如果出现启动黑屏的现象就用前者[^4]。
+搜索关键字 `显卡型号 config.plist` 来找合适的 `config.plist`。RehabMan 有各种显卡的配置：https://github.com/RehabMan/OS-X-Clover-Laptop-Config。之后装几个最基本的驱动：FakePCIID.kext、FakeSMC.kext、VoodooPS2Controller.kext。具体怎么装，不同显卡、网卡、系统版本各不相同，通过关键字 `显卡型号＋10.11或者 El Capian`来找。安装驱动的时候要看说明，注意哪些额外步骤是需要注意的。网上的`config.plist`不是下载下来就可用的，一般都需要做调整。比如说显卡是 HD4400，就下载 `config_HD4600_4400_4200.plist`，重命名为 `config.plist` 。该配置禁用了 VBoxHfs.efi，需要把这一条删了，要不然到时候看不到 OS X 的启动菜单。根据关键字 `HD4400 10.11` 找到：http://www.tonymacx86.com/threads/fix-hd4200-hd4400-hd4600-hd5600-on-10-11.175797/，按上面的步骤操作基本上能成功。VBoxHFS.efi 和 HFSPlus.efi，两者都可以用来读取 HFS 分区，被 Clover 用来寻找可引导的项，据说后者速度快，但前者兼容性好，如果出现启动黑屏的现象就用前者[^4]。
 
 在安装阶段只用 Fake ID、显卡、键盘的驱动，在将系统安装到硬盘之后再安装网卡、声卡、电源的驱动到 `/System/Library/Extensions`，方法也和上面一样，模块型号＋系统版本。个人经验，除了 VoodooPS2Controller，其它的只需放在 EFI/Clover/kexts。
 
