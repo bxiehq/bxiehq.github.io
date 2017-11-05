@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://ealmr.pw/sitemap.xml
+Sitemap: https://rmlea.github.io/sitemap.xml
