@@ -15,7 +15,7 @@ $$ N < f(x) < M \Leftrightarrow [ f(x)-M ][ f(x)-N] < 0 \\
                 \Leftrightarrow | f(x)-\frac{M+N}{2} | < \frac{M-N}{2}  \\
                 \Leftrightarrow \frac{f(x)-N}{M-f(x)}>0 $$
 
-看源代码就是翻译成了：
+源代码翻译成：
 
 ```
 <script type="math/tex; mode=display">% <![CDATA[
@@ -24,7 +24,7 @@ N < f(x) < M \Leftrightarrow [ f(x)-M ][ f(x)-N] < 0 \\
                 \Leftrightarrow \frac{f(x)-N}{M-f(x)}>0 %]]></script>
 ```
 
-当然在源文件里用 script 标签的形式写也是可行的：
+当然在源文件里用 script 标签的形式写也可行：
 
 <script type="math/tex; mode=display">\complement_U(A\bigcap B) = \complement_UA\bigcup \complement_UB; \complement_U(A\bigcup B) = \complement_UA\bigcap \complement_UB</script>
 
