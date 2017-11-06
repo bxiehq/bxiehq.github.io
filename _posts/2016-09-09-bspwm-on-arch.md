@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Archlinux 安装 bspwm"
+title: "Arch Linux 安装 bspwm"
 
 ---
 
