@@ -147,7 +147,6 @@ mail: {
 编辑 `content/themes/casper/default.hbs`，在 `</head>` 前加入：
 
 ```
-{{! Mathjax configuration}}
 <script type="text/javascript"    src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <script type="text/x-mathjax-config">  

@@ -1,26 +1,31 @@
-<!DOCTYPE html>
+---
+layout: compress
+---
+
 <html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        {% include header.html %}
+        <main>
+            {{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
+        </main>
+        
+        {% if page.path contains '_posts' %}
+        {% if content contains 'reversefootnote' %}
+        <aside class="note"></aside>
+        {% endif %}
+        {% endif %}
 
-  {% include head.html %}
+        <div align="center" style="margin-top: 50px">
+            <footer>
+            Powered by <a href="https://jekyllrb.com/">Jekyll</a>
+            </footer>
+        </div>
 
-  <body>
-
-    {% include header.html %}
-
-    {% if page.mjlatex == true %}
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$', '$'], ['\\(', '\\)'] ] } });
-    </script>
-    {% endif %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
     </div>
 
-    {% include footer.html %}
 
-  </body>
-
+    </body>
 </html>

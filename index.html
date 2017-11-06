@@ -2,22 +2,66 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <ul>
+        {% for post in paginator.posts %}
+        <li>
+            <div class="post-date">
+            
+                <span>{{page.categories  }}</span>
+                <span>{{ post.date|date: "%m-%d-%Y"  }}</span>
+            </div>
+        
+            <div class="title">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 
-</div>
+    <div class="bottom-page">
+        <div class="previous-page">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}">
+                <div class="page-img">
+                    <i class="fa fa-angle-left fa-2x"></i>
+                </div>
+            </a>
+            {% else %}
+            <span></span>
+            {% endif %}
+    </div>
+
+    <div class="next-page">
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}">
+                <div class="page-img">
+                    <i class="fa fa-angle-right fa-2x"></i>
+                </div>
+            </a>
+            {% else %}
+            <span></span>
+            {% endif %}
+    </div>
+
+    <div class="page">
+            {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+            <div class="page-num">{{ page }}</div>
+            {% elsif page == 1 %}
+            <div class="page-num">
+                <a href="/">{{ page }}</a>
+            </div>
+            {% else %}
+            <div class="page-num">
+                <a href="/page{{ page }}">{{ page }}</a>
+            </div>
+            {% endif %}
+            {% endfor %}
+    </div>
+    
+</section>
