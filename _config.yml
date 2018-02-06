@@ -17,6 +17,7 @@ timezone: Asia/Shanghai
 twitter_username: 
 github_username: 
 google_analytics: UA-76951800-1
+remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
   - jekyll-paginate
